@@ -48,7 +48,7 @@ function question3() {
   let array = []
   for (var i = 0; i < data.length; i++) {
     if (data[i].currency_code === "GBP") {
-      array.push(data[i].title, data[i].price)
+      array.push(data[i].title, data[i].price);
     }
   }
   console.log(array);
@@ -62,6 +62,17 @@ function question3() {
 // }
 
 // 4: Display a list of all items who are made of wood.
+// function question4() {
+//   let items = []
+//   for (var i = 0; i < data.length; i++) {
+//     if (data[i].materials === "wood") {
+//       items.push(data[i].materials);
+//     }
+//   }
+//   console.log(items);
+// }
+
+//forEach method
 function question4() {
   data.forEach(function(element) {
     element.materials.forEach(function(items) {
@@ -71,7 +82,6 @@ function question4() {
   });
 }
 
-
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
 function question5() {
@@ -80,7 +90,6 @@ function question5() {
       console.log(element.title, element.items, element.materials);
   });
 }
-
 
 // 6: How many items were made by their sellers?
 function question6() {
